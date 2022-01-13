@@ -1,0 +1,12 @@
+.js-gallery {
+  display: flex;
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
