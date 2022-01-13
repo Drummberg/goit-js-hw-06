@@ -15,4 +15,21 @@ const images = [
 
 const mainList = document.querySelector('.gallery');
 
-const 
+
+
+const makeMainItem = (images) => {
+    const { url, alt } = images;
+   return `<li class="js-gallery">
+        <img
+          src="${url}",
+          alt="${alt}",
+          width = 1200,
+          heigth = 900,
+        />
+      </li>`;
+
+
+};
+const markup = images.map(makeMainItem).join("");
+mainList.insertAdjacentHTML('beforeend', markup);
+    
