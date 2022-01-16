@@ -8,8 +8,8 @@ function getRandomHexColor() {
 };
 
 function changesBackgroundColorOfBody(event) {
-    const fuu = getRandomHexColor();
-    document.body.style.backgroundColor = fuu;
-    nameColor.textContent = fuu;
+    const newBodyColor = getRandomHexColor();
+    document.body.style.backgroundColor = newBodyColor;
+    nameColor.textContent = newBodyColor;
     };
 
