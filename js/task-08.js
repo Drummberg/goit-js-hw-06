@@ -3,7 +3,7 @@ form.addEventListener('submit', submitForm);
 
 function submitForm(event) {
     event.preventDefault();
-
+event.currentTarget.reset();
     const formElements = event.currentTarget.elements;
 
         const email = formElements.email.value;
@@ -12,10 +12,11 @@ function submitForm(event) {
     const formData = { email, password };
 
     if (formElements.email.value === "" || formElements.password.value === "") {
-    return alert("Please fill in all the fields!");
+        return alert("Please fill in all the fields!");
+        
     };
 
-    event.currentTarget.reset();
+    
     
     console.log(formData);
 };
