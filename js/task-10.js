@@ -15,21 +15,21 @@ function getRandomHexColor() {
 
 
 function createBoxes(amount) {
-    // amount = inputEl.value;
+    amount = inputEl.value;
     let divWidth = 30;
     let divHeight = 30;
     const divs = document.createElement("div");
-    divs.length;
     divs.style.width = divWidth + 'px';
     divs.style.height = divHeight + 'px';
     divs.style.color = getRandomHexColor();
     newDivBoxes.append(divs);
-    console.log(divs.style.color);
+    
 };
 
 btnDestroy.addEventListener('click', destroyBoxes);
 
-function destroyBoxes() {
+function destroyBoxes(amount) {
+    amount = inputEl.value;
     const deleteDivs = document.querySelector('#boxes div');
     deleteDivs.remove();
 }
