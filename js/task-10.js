@@ -5,7 +5,6 @@ const newDivBoxes = document.querySelector('#boxes');
 
 
 inputEl.addEventListener('input', () => {
-    
     return btnCreate.addEventListener       ('click', createBoxes);
 });
 
@@ -21,7 +20,7 @@ function createBoxes(amount) {
     const divs = document.createElement("div");
     divs.style.width = divWidth + 'px';
     divs.style.height = divHeight + 'px';
-    divs.style.color = getRandomHexColor();
+    divs.style.backgroundColor = getRandomHexColor();
     newDivBoxes.append(divs);
     
 };
