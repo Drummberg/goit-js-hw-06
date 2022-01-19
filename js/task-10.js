@@ -23,6 +23,7 @@ function createBoxes(amount) {
     divs.style.backgroundColor = getRandomHexColor();
     newDivBoxes.append(divs);
     
+    console.dir(amount);
 };
 
 btnDestroy.addEventListener('click', destroyBoxes);
